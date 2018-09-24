@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/um7_test_registers.dir/test/test_registers.cpp.o CMakeFiles/um7_test_registers.dir/src/registers.cpp.o  -o /home/dlab/ros_ws/devel/lib/um7/um7_test_registers  -L/home/dlab/ros_ws/build/gtest -rdynamic ../gtest/libgtest.so -lpthread -Wl,-rpath,/home/dlab/ros_ws/build/gtest 

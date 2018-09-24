@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/dlab/ros_ws/src/opencv_apps/msg/Point2D.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Point2DStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Point2DArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Point2DArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Rect.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RectArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RectArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Flow.msg;/home/dlab/ros_ws/src/opencv_apps/msg/FlowStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/FlowArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/FlowArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RectArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Size.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Face.msg;/home/dlab/ros_ws/src/opencv_apps/msg/FaceArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/FaceArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Line.msg;/home/dlab/ros_ws/src/opencv_apps/msg/LineArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/LineArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RotatedRect.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RotatedRectStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RotatedRectArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/RotatedRectArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Circle.msg;/home/dlab/ros_ws/src/opencv_apps/msg/CircleArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/CircleArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Moment.msg;/home/dlab/ros_ws/src/opencv_apps/msg/MomentArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/MomentArrayStamped.msg;/home/dlab/ros_ws/src/opencv_apps/msg/Contour.msg;/home/dlab/ros_ws/src/opencv_apps/msg/ContourArray.msg;/home/dlab/ros_ws/src/opencv_apps/msg/ContourArrayStamped.msg"
+services_str = ""
+pkg_name = "opencv_apps"
+dependencies_str = "std_msgs"
+langs = "gencpp;genlisp;genpy"
+dep_include_paths_str = "opencv_apps;/home/dlab/ros_ws/src/opencv_apps/msg;std_msgs;/home/dlab/ros_catkin_ws/src/std_msgs/msg"
+PYTHON_EXECUTABLE = "/usr/bin/python"
+package_has_static_sources = '' == 'TRUE'
+genmsg_check_deps_script = "/home/dlab/ros_catkin_ws/src/genmsg/scripts/genmsg_check_deps.py"

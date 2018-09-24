@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dlab/ros_ws/src/epos_hardware/epos_hardware/include/epos_hardware/utils.h
+string
+-
+vector
+-
+map
+-
+stdint.h
+-
+epos_library/Definitions.h
+/home/dlab/ros_ws/src/epos_hardware/epos_hardware/include/epos_hardware/epos_library/Definitions.h
+boost/shared_ptr.hpp
+-
+boost/weak_ptr.hpp
+-
+
+/home/dlab/ros_ws/src/epos_hardware/epos_hardware/src/util/utils.cpp
+epos_hardware/utils.h
+/home/dlab/ros_ws/src/epos_hardware/epos_hardware/src/util/epos_hardware/utils.h
+boost/foreach.hpp
+-
+sstream
+-
+
+/home/dlab/ros_ws/src/epos_hardware/epos_library/include/epos_library/Definitions.h
+
