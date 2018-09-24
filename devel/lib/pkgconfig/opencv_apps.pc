@@ -1,0 +1,8 @@
+prefix=/home/dlab/ros_ws/devel
+
+Name: opencv_apps
+Description: Description of opencv_apps
+Version: 1.11.15
+Cflags: -I/home/dlab/ros_ws/devel/include -I/home/dlab/ros_ws/src/opencv_apps/include
+Libs: -L/home/dlab/ros_ws/devel/lib -lopencv_apps
+Requires: std_msgs

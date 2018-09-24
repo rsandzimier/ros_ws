@@ -1,0 +1,8 @@
+prefix=/home/dlab/ros_ws/devel
+
+Name: epos_hardware
+Description: Description of epos_hardware
+Version: 0.0.3
+Cflags: -I/home/dlab/ros_ws/src/epos_hardware/epos_hardware/include
+Libs: -L/home/dlab/ros_ws/devel/lib -lepos_library_utils -lepos_manager -lepos_hardware
+Requires: epos_library hardware_interface roscpp controller_manager diagnostic_updater

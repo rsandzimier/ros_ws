@@ -1,0 +1,8 @@
+prefix=/home/dlab/ros_ws/devel
+
+Name: controller_interface
+Description: Description of controller_interface
+Version: 0.9.7
+Cflags: -I/home/dlab/ros_ws/src/controller_interface/include
+Libs: -L/home/dlab/ros_ws/devel/lib 
+Requires: roscpp hardware_interface pluginlib

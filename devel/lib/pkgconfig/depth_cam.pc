@@ -1,0 +1,8 @@
+prefix=/home/dlab/ros_ws/devel
+
+Name: depth_cam
+Description: Description of depth_cam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dlab/ros_ws/devel/lib 
+Requires: 

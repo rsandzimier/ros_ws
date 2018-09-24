@@ -1,0 +1,8 @@
+prefix=/home/dlab/ros_ws/devel
+
+Name: epos_library
+Description: Description of epos_library
+Version: 0.0.3
+Cflags: -I/home/dlab/ros_ws/src/epos_hardware/epos_library/include
+Libs: -L/home/dlab/ros_ws/devel/lib -lftd2xx -lEposCmd
+Requires: 
