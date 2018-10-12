@@ -7,15 +7,16 @@ import struct
 
 
 class JointCalibration(genpy.Message):
-  _md5sum = "4a8559128caa4b31780f20e8b2b7c46f"
+  _md5sum = "cd3e91ae926a8864e0ecf334cb247054"
   _type = "exp_excavator/JointCalibration"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """float64 boom
 float64 arm
 float64 bucket
+bool success
 """
-  __slots__ = ['boom','arm','bucket']
-  _slot_types = ['float64','float64','float64']
+  __slots__ = ['boom','arm','bucket','success']
+  _slot_types = ['float64','float64','float64','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -25,7 +26,7 @@ float64 bucket
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       boom,arm,bucket
+       boom,arm,bucket,success
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -40,10 +41,13 @@ float64 bucket
         self.arm = 0.
       if self.bucket is None:
         self.bucket = 0.
+      if self.success is None:
+        self.success = False
     else:
       self.boom = 0.
       self.arm = 0.
       self.bucket = 0.
+      self.success = False
 
   def _get_types(self):
     """
@@ -58,7 +62,7 @@ float64 bucket
     """
     try:
       _x = self
-      buff.write(_struct_3d.pack(_x.boom, _x.arm, _x.bucket))
+      buff.write(_struct_3dB.pack(_x.boom, _x.arm, _x.bucket, _x.success))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -71,8 +75,9 @@ float64 bucket
       end = 0
       _x = self
       start = end
-      end += 24
-      (_x.boom, _x.arm, _x.bucket,) = _struct_3d.unpack(str[start:end])
+      end += 25
+      (_x.boom, _x.arm, _x.bucket, _x.success,) = _struct_3dB.unpack(str[start:end])
+      self.success = bool(self.success)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -86,7 +91,7 @@ float64 bucket
     """
     try:
       _x = self
-      buff.write(_struct_3d.pack(_x.boom, _x.arm, _x.bucket))
+      buff.write(_struct_3dB.pack(_x.boom, _x.arm, _x.bucket, _x.success))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -100,11 +105,12 @@ float64 bucket
       end = 0
       _x = self
       start = end
-      end += 24
-      (_x.boom, _x.arm, _x.bucket,) = _struct_3d.unpack(str[start:end])
+      end += 25
+      (_x.boom, _x.arm, _x.bucket, _x.success,) = _struct_3dB.unpack(str[start:end])
+      self.success = bool(self.success)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_3d = struct.Struct("<3d")
+_struct_3dB = struct.Struct("<3dB")

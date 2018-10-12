@@ -150,4 +150,3 @@ void loop()
 float sign(float value) {
   return float((value > 0) - (value < 0));
 }
-

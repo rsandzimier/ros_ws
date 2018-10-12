@@ -1466,6 +1466,110 @@ _run_tests_hardware_interface_gtest_joint_command_interface_test/fast:
 .PHONY : _run_tests_hardware_interface_gtest_joint_command_interface_test/fast
 
 #=============================================================================
+# Target rules for targets named realsense
+
+# Build rule for target.
+realsense: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 realsense
+.PHONY : realsense
+
+# fast build rule for target.
+realsense/fast:
+	$(MAKE) -f librealsense/CMakeFiles/realsense.dir/build.make librealsense/CMakeFiles/realsense.dir/build
+.PHONY : realsense/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) -f librealsense/CMakeFiles/uninstall.dir/build.make librealsense/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named SR300-live-test
+
+# Build rule for target.
+SR300-live-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SR300-live-test
+.PHONY : SR300-live-test
+
+# fast build rule for target.
+SR300-live-test/fast:
+	$(MAKE) -f librealsense/unit-tests/CMakeFiles/SR300-live-test.dir/build.make librealsense/unit-tests/CMakeFiles/SR300-live-test.dir/build
+.PHONY : SR300-live-test/fast
+
+#=============================================================================
+# Target rules for targets named R200-live-test
+
+# Build rule for target.
+R200-live-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 R200-live-test
+.PHONY : R200-live-test
+
+# fast build rule for target.
+R200-live-test/fast:
+	$(MAKE) -f librealsense/unit-tests/CMakeFiles/R200-live-test.dir/build.make librealsense/unit-tests/CMakeFiles/R200-live-test.dir/build
+.PHONY : R200-live-test/fast
+
+#=============================================================================
+# Target rules for targets named F200-live-test
+
+# Build rule for target.
+F200-live-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 F200-live-test
+.PHONY : F200-live-test
+
+# fast build rule for target.
+F200-live-test/fast:
+	$(MAKE) -f librealsense/unit-tests/CMakeFiles/F200-live-test.dir/build.make librealsense/unit-tests/CMakeFiles/F200-live-test.dir/build
+.PHONY : F200-live-test/fast
+
+#=============================================================================
+# Target rules for targets named ZR300-live-test
+
+# Build rule for target.
+ZR300-live-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ZR300-live-test
+.PHONY : ZR300-live-test
+
+# fast build rule for target.
+ZR300-live-test/fast:
+	$(MAKE) -f librealsense/unit-tests/CMakeFiles/ZR300-live-test.dir/build.make librealsense/unit-tests/CMakeFiles/ZR300-live-test.dir/build
+.PHONY : ZR300-live-test/fast
+
+#=============================================================================
+# Target rules for targets named offline-test
+
+# Build rule for target.
+offline-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 offline-test
+.PHONY : offline-test
+
+# fast build rule for target.
+offline-test/fast:
+	$(MAKE) -f librealsense/unit-tests/CMakeFiles/offline-test.dir/build.make librealsense/unit-tests/CMakeFiles/offline-test.dir/build
+.PHONY : offline-test/fast
+
+#=============================================================================
+# Target rules for targets named LR200-live-test
+
+# Build rule for target.
+LR200-live-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LR200-live-test
+.PHONY : LR200-live-test
+
+# fast build rule for target.
+LR200-live-test/fast:
+	$(MAKE) -f librealsense/unit-tests/CMakeFiles/LR200-live-test.dir/build.make librealsense/unit-tests/CMakeFiles/LR200-live-test.dir/build
+.PHONY : LR200-live-test/fast
+
+#=============================================================================
 # Target rules for targets named run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_launch_watershed_segmentation.launch
 
 # Build rule for target.
@@ -5509,69 +5613,43 @@ epos_hardware_node/fast:
 .PHONY : epos_hardware_node/fast
 
 #=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_ForceWorld
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_StatePing
 
 # Build rule for target.
-_exp_excavator_generate_messages_check_deps_ForceWorld: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_ForceWorld
-.PHONY : _exp_excavator_generate_messages_check_deps_ForceWorld
+_exp_excavator_generate_messages_check_deps_StatePing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_StatePing
+.PHONY : _exp_excavator_generate_messages_check_deps_StatePing
 
 # fast build rule for target.
-_exp_excavator_generate_messages_check_deps_ForceWorld/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_ForceWorld.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_ForceWorld.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_ForceWorld/fast
+_exp_excavator_generate_messages_check_deps_StatePing/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_StatePing.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_StatePing.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_StatePing/fast
 
 #=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_PowerBucket
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_PowerMachine
 
 # Build rule for target.
-_exp_excavator_generate_messages_check_deps_PowerBucket: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_PowerBucket
-.PHONY : _exp_excavator_generate_messages_check_deps_PowerBucket
+_exp_excavator_generate_messages_check_deps_PowerMachine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_PowerMachine
+.PHONY : _exp_excavator_generate_messages_check_deps_PowerMachine
 
 # fast build rule for target.
-_exp_excavator_generate_messages_check_deps_PowerBucket/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerBucket.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerBucket.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_PowerBucket/fast
+_exp_excavator_generate_messages_check_deps_PowerMachine/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerMachine.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerMachine.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_PowerMachine/fast
 
 #=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointCommandArduino
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointValues
 
 # Build rule for target.
-_exp_excavator_generate_messages_check_deps_JointCommandArduino: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointCommandArduino
-.PHONY : _exp_excavator_generate_messages_check_deps_JointCommandArduino
+_exp_excavator_generate_messages_check_deps_JointValues: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointValues
+.PHONY : _exp_excavator_generate_messages_check_deps_JointValues
 
 # fast build rule for target.
-_exp_excavator_generate_messages_check_deps_JointCommandArduino/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCommandArduino.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCommandArduino.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_JointCommandArduino/fast
-
-#=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointStateMachineArduino
-
-# Build rule for target.
-_exp_excavator_generate_messages_check_deps_JointStateMachineArduino: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointStateMachineArduino
-.PHONY : _exp_excavator_generate_messages_check_deps_JointStateMachineArduino
-
-# fast build rule for target.
-_exp_excavator_generate_messages_check_deps_JointStateMachineArduino/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointStateMachineArduino.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointStateMachineArduino.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_JointStateMachineArduino/fast
-
-#=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointCalibration
-
-# Build rule for target.
-_exp_excavator_generate_messages_check_deps_JointCalibration: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointCalibration
-.PHONY : _exp_excavator_generate_messages_check_deps_JointCalibration
-
-# fast build rule for target.
-_exp_excavator_generate_messages_check_deps_JointCalibration/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCalibration.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCalibration.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_JointCalibration/fast
+_exp_excavator_generate_messages_check_deps_JointValues/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_JointValues/fast
 
 #=============================================================================
 # Target rules for targets named _exp_excavator_generate_messages_check_deps_JointCommandDynamixel
@@ -5626,30 +5704,69 @@ _exp_excavator_generate_messages_check_deps_Jacobian/fast:
 .PHONY : _exp_excavator_generate_messages_check_deps_Jacobian/fast
 
 #=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_PowerMachine
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_PowerBucket
 
 # Build rule for target.
-_exp_excavator_generate_messages_check_deps_PowerMachine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_PowerMachine
-.PHONY : _exp_excavator_generate_messages_check_deps_PowerMachine
+_exp_excavator_generate_messages_check_deps_PowerBucket: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_PowerBucket
+.PHONY : _exp_excavator_generate_messages_check_deps_PowerBucket
 
 # fast build rule for target.
-_exp_excavator_generate_messages_check_deps_PowerMachine/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerMachine.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerMachine.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_PowerMachine/fast
+_exp_excavator_generate_messages_check_deps_PowerBucket/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerBucket.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerBucket.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_PowerBucket/fast
 
 #=============================================================================
-# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointValues
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointCommandArduino
 
 # Build rule for target.
-_exp_excavator_generate_messages_check_deps_JointValues: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointValues
-.PHONY : _exp_excavator_generate_messages_check_deps_JointValues
+_exp_excavator_generate_messages_check_deps_JointCommandArduino: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointCommandArduino
+.PHONY : _exp_excavator_generate_messages_check_deps_JointCommandArduino
 
 # fast build rule for target.
-_exp_excavator_generate_messages_check_deps_JointValues/fast:
-	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/build
-.PHONY : _exp_excavator_generate_messages_check_deps_JointValues/fast
+_exp_excavator_generate_messages_check_deps_JointCommandArduino/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCommandArduino.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCommandArduino.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_JointCommandArduino/fast
+
+#=============================================================================
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointCalibration
+
+# Build rule for target.
+_exp_excavator_generate_messages_check_deps_JointCalibration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointCalibration
+.PHONY : _exp_excavator_generate_messages_check_deps_JointCalibration
+
+# fast build rule for target.
+_exp_excavator_generate_messages_check_deps_JointCalibration/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCalibration.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointCalibration.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_JointCalibration/fast
+
+#=============================================================================
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_JointStateMachineArduino
+
+# Build rule for target.
+_exp_excavator_generate_messages_check_deps_JointStateMachineArduino: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_JointStateMachineArduino
+.PHONY : _exp_excavator_generate_messages_check_deps_JointStateMachineArduino
+
+# fast build rule for target.
+_exp_excavator_generate_messages_check_deps_JointStateMachineArduino/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointStateMachineArduino.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointStateMachineArduino.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_JointStateMachineArduino/fast
+
+#=============================================================================
+# Target rules for targets named _exp_excavator_generate_messages_check_deps_ForceWorld
+
+# Build rule for target.
+_exp_excavator_generate_messages_check_deps_ForceWorld: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _exp_excavator_generate_messages_check_deps_ForceWorld
+.PHONY : _exp_excavator_generate_messages_check_deps_ForceWorld
+
+# fast build rule for target.
+_exp_excavator_generate_messages_check_deps_ForceWorld/fast:
+	$(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_ForceWorld.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_ForceWorld.dir/build
+.PHONY : _exp_excavator_generate_messages_check_deps_ForceWorld/fast
 
 #=============================================================================
 # Target rules for targets named exp_excavator_generate_messages_cpp
@@ -6245,6 +6362,14 @@ help:
 	@echo "... joint_command_interface_test"
 	@echo "... robot_hw_test"
 	@echo "... _run_tests_hardware_interface_gtest_joint_command_interface_test"
+	@echo "... realsense"
+	@echo "... uninstall"
+	@echo "... SR300-live-test"
+	@echo "... R200-live-test"
+	@echo "... F200-live-test"
+	@echo "... ZR300-live-test"
+	@echo "... offline-test"
+	@echo "... LR200-live-test"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_launch_watershed_segmentation.launch"
 	@echo "... _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_launch_smoothing.launch"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_launch_smoothing.launch"
@@ -6556,17 +6681,18 @@ help:
 	@echo "... get_state"
 	@echo "... epos_manager"
 	@echo "... epos_hardware_node"
-	@echo "... _exp_excavator_generate_messages_check_deps_ForceWorld"
-	@echo "... _exp_excavator_generate_messages_check_deps_PowerBucket"
-	@echo "... _exp_excavator_generate_messages_check_deps_JointCommandArduino"
-	@echo "... _exp_excavator_generate_messages_check_deps_JointStateMachineArduino"
-	@echo "... _exp_excavator_generate_messages_check_deps_JointCalibration"
+	@echo "... _exp_excavator_generate_messages_check_deps_StatePing"
+	@echo "... _exp_excavator_generate_messages_check_deps_PowerMachine"
+	@echo "... _exp_excavator_generate_messages_check_deps_JointValues"
 	@echo "... _exp_excavator_generate_messages_check_deps_JointCommandDynamixel"
 	@echo "... exp_excavator_gencpp"
 	@echo "... exp_excavator_generate_messages"
 	@echo "... _exp_excavator_generate_messages_check_deps_Jacobian"
-	@echo "... _exp_excavator_generate_messages_check_deps_PowerMachine"
-	@echo "... _exp_excavator_generate_messages_check_deps_JointValues"
+	@echo "... _exp_excavator_generate_messages_check_deps_PowerBucket"
+	@echo "... _exp_excavator_generate_messages_check_deps_JointCommandArduino"
+	@echo "... _exp_excavator_generate_messages_check_deps_JointCalibration"
+	@echo "... _exp_excavator_generate_messages_check_deps_JointStateMachineArduino"
+	@echo "... _exp_excavator_generate_messages_check_deps_ForceWorld"
 	@echo "... exp_excavator_generate_messages_cpp"
 	@echo "... exp_excavator_generate_messages_lisp"
 	@echo "... exp_excavator_generate_messages_py"

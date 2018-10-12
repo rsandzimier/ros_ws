@@ -8,12 +8,14 @@ import struct
 import std_msgs.msg
 
 class JointCommandDynamixel(genpy.Message):
-  _md5sum = "639e61283d73fcaf119237a7509c96e9"
+  _md5sum = "8cbe3711ac227927c7f2153f8850e46e"
   _type = "exp_excavator/JointCommandDynamixel"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """Header header
 
 float64 bucketV
+float64 bucketP
+
 
 ================================================================================
 MSG: std_msgs/Header
@@ -33,8 +35,8 @@ time stamp
 # 1: global frame
 string frame_id
 """
-  __slots__ = ['header','bucketV']
-  _slot_types = ['std_msgs/Header','float64']
+  __slots__ = ['header','bucketV','bucketP']
+  _slot_types = ['std_msgs/Header','float64','float64']
 
   def __init__(self, *args, **kwds):
     """
@@ -44,7 +46,7 @@ string frame_id
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,bucketV
+       header,bucketV,bucketP
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -57,9 +59,12 @@ string frame_id
         self.header = std_msgs.msg.Header()
       if self.bucketV is None:
         self.bucketV = 0.
+      if self.bucketP is None:
+        self.bucketP = 0.
     else:
       self.header = std_msgs.msg.Header()
       self.bucketV = 0.
+      self.bucketP = 0.
 
   def _get_types(self):
     """
@@ -84,7 +89,8 @@ string frame_id
         buff.write(struct.pack('<I%sB'%length, length, *_x))
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
-      buff.write(_struct_d.pack(self.bucketV))
+      _x = self
+      buff.write(_struct_2d.pack(_x.bucketV, _x.bucketP))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -110,9 +116,10 @@ string frame_id
         self.header.frame_id = str[start:end].decode('utf-8')
       else:
         self.header.frame_id = str[start:end]
+      _x = self
       start = end
-      end += 8
-      (self.bucketV,) = _struct_d.unpack(str[start:end])
+      end += 16
+      (_x.bucketV, _x.bucketP,) = _struct_2d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -136,7 +143,8 @@ string frame_id
         buff.write(struct.pack('<I%sB'%length, length, *_x))
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
-      buff.write(_struct_d.pack(self.bucketV))
+      _x = self
+      buff.write(_struct_2d.pack(_x.bucketV, _x.bucketP))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -163,13 +171,14 @@ string frame_id
         self.header.frame_id = str[start:end].decode('utf-8')
       else:
         self.header.frame_id = str[start:end]
+      _x = self
       start = end
-      end += 8
-      (self.bucketV,) = _struct_d.unpack(str[start:end])
+      end += 16
+      (_x.bucketV, _x.bucketP,) = _struct_2d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
+_struct_2d = struct.Struct("<2d")
 _struct_3I = struct.Struct("<3I")
-_struct_d = struct.Struct("<d")

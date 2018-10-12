@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "exp_excavator: 9 messages, 0 services")
+message(STATUS "exp_excavator: 10 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg;-Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg")
 
@@ -20,9 +20,14 @@ add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
 add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" "std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
+add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" ""
 )
 
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg" NAME_WE)
@@ -40,9 +45,9 @@ add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
 add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" "std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg" NAME_WE)
@@ -50,9 +55,9 @@ add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg" NAME_WE)
 add_custom_target(_exp_excavator_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "exp_excavator" "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg" "std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg" NAME_WE)
@@ -74,6 +79,12 @@ _generate_msg_cpp(exp_excavator
 )
 _generate_msg_cpp(exp_excavator
   "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/exp_excavator
+)
+_generate_msg_cpp(exp_excavator
+  "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg"
   "${MSG_I_FLAGS}"
   "/home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/exp_excavator
@@ -137,7 +148,9 @@ add_dependencies(exp_excavator_generate_messages exp_excavator_generate_messages
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
@@ -145,11 +158,11 @@ get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointC
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_cpp _exp_excavator_generate_messages_check_deps_${_filename})
@@ -171,6 +184,12 @@ _generate_msg_lisp(exp_excavator
 )
 _generate_msg_lisp(exp_excavator
   "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/exp_excavator
+)
+_generate_msg_lisp(exp_excavator
+  "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg"
   "${MSG_I_FLAGS}"
   "/home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/exp_excavator
@@ -234,7 +253,9 @@ add_dependencies(exp_excavator_generate_messages exp_excavator_generate_messages
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
@@ -242,11 +263,11 @@ get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointC
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_lisp _exp_excavator_generate_messages_check_deps_${_filename})
@@ -268,6 +289,12 @@ _generate_msg_py(exp_excavator
 )
 _generate_msg_py(exp_excavator
   "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/exp_excavator
+)
+_generate_msg_py(exp_excavator
+  "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg"
   "${MSG_I_FLAGS}"
   "/home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/exp_excavator
@@ -331,7 +358,9 @@ add_dependencies(exp_excavator_generate_messages exp_excavator_generate_messages
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
@@ -339,11 +368,11 @@ get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointC
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg" NAME_WE)
+get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg" NAME_WE)
 add_dependencies(exp_excavator_generate_messages_py _exp_excavator_generate_messages_check_deps_${_filename})

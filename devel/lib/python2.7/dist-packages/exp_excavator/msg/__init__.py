@@ -7,3 +7,4 @@ from ._JointStateMachineArduino import *
 from ._JointValues import *
 from ._PowerBucket import *
 from ._PowerMachine import *
+from ._StatePing import *

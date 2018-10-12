@@ -55,8 +55,8 @@ class CalibratorWithIMU:
             
     def cb_pos_arduino(self, msg):
         try:
-            self.posBoom = -0.02*msg.boomP
-            self.posArm  = -0.02*msg.armP
+            self.posBoom = msg.boomP
+            self.posArm  = msg.armP
         except :
             print("ERRORcbpos")  
     
@@ -68,23 +68,23 @@ class CalibratorWithIMU:
             print("ERRORcbDYNA")  
 
     def flow_update(self):
-
+	if(self.posBoom == [] or self.posArm == [] or (self.ImuBoom.linear_acceleration.y == 0 and self.ImuBoom.linear_acceleration.z == 0)): return False
         #gamma = np.arctan2(-self.ImuBoom.linear_acceleration.z,self.ImuBoom.linear_acceleration.y)
         #delta = np.arctan2(-self.ImuArm.linear_acceleration.z,self.ImuArm.linear_acceleration.y)
 
         gamma = np.arctan2(self.ImuBoom.linear_acceleration.y,self.ImuBoom.linear_acceleration.z)
         delta = np.arctan2(self.ImuArm.linear_acceleration.y,self.ImuArm.linear_acceleration.z)
-
-        
+	       
 
         #self.alpha = np.float64(self.alpha)  +  np.divide(np.float64(self.P_old),(1+np.float64(self.P_old)))*(-(np.float64(gamma)+np.float64(self.posBoom)+np.pi/2) -self.alpha)
         #self.beta =  np.float64(self.beta)   +  np.divide(np.float64(self.P_old),(1+np.float64(self.P_old)))*(np.float64(gamma)-np.float64(delta)-np.float64(self.posArm) -self.beta)
         #self.P_new  = np.float64(self.P_old) -  np.divide(np.float64(self.P_old)*np.float64(self.P_old),1+np.float64(self.P_old))
         #self.P_old = np.array(self.P_new)
-
+	
         self.alpha = np.divide(np.float64(self.alpha*self.N) + np.float64(gamma) - np.float64(self.posBoom/50.0), np.float64(self.N + 1))
         self.beta =  np.divide(np.float64(self.beta*self.N) + (np.float64(delta - gamma)) - np.float64(self.posArm/50.0), np.float64(self.N + 1))  
         self.N += 1
+	return True
 
         
     def Calibrate_update(self):
@@ -92,9 +92,9 @@ class CalibratorWithIMU:
         r = rospy.Rate(self.rate)
         start_time = rospy.Time.now()
         d = rospy.Duration.from_sec(4)       
-        
+        success = False
         while ((rospy.Time.now() - start_time) < d):
-            self.flow_update()
+            success = self.flow_update()
             r.sleep()
 
 
@@ -103,11 +103,13 @@ class CalibratorWithIMU:
         self.calibration_msg.boom   =  np.float32(50.0*self.alpha)
         self.calibration_msg.arm    =  np.float32(50.0*self.beta)
         self.calibration_msg.bucket =  np.float32(np.pi)
+	self.calibration_msg.success = success
 
         print(np.float32(50.0*self.alpha))#
         print(np.float32(50.0*self.beta)) #
-        print(- np.float32(np.pi))  #
+        print(np.float32(np.pi))  #
         self.pub_JointCalib.publish(self.calibration_msg)
+	if not success: print 'CALIBRATION NOT SUCCESSFUL'
 
              
 if __name__ == '__main__':

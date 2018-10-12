@@ -43,6 +43,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg"
     "/home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg"
     "/home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg"
+    "/home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg"
     )
 endif()
 

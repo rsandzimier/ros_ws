@@ -5,4 +5,6 @@
           ARM
           BUCKET-VAL
           BUCKET
+          SUCCESS-VAL
+          SUCCESS
 ))

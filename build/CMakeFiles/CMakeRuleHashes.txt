@@ -14,6 +14,7 @@ fb3fafc2c23f74c8b6c8b1b2132df0be /home/dlab/ros_ws/devel/include/exp_excavator/J
 68d080414880dd97832d8dd6f63cc6bd /home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h
 470213ec9aafd5d41f782543cb05411a /home/dlab/ros_ws/devel/include/exp_excavator/PowerBucket.h
 9ea0522c036ef338f5ac09e320b1dfe3 /home/dlab/ros_ws/devel/include/exp_excavator/PowerMachine.h
+13fd8d683d73d0aaf952790f8e31a927 /home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h
 6bcac6e3951c697a2c8e4bbcf3affd24 /home/dlab/ros_ws/devel/include/opencv_apps/AddingImagesConfig.h
 08dc337ec5f9c8c9396c4e7543067973 /home/dlab/ros_ws/devel/include/opencv_apps/CamShiftConfig.h
 686f7af4d3325beb262d79be6ab3d8e1 /home/dlab/ros_ws/devel/include/opencv_apps/Circle.h
@@ -88,6 +89,7 @@ e4a852ebdea144cc6bdfdc018dc2f469 /home/dlab/ros_ws/devel/lib/python2.7/dist-pack
 fe24b4c33a0e4d677b48c92b75ed41d4 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py
 c8c2f832105162a10e1f535a176485b7 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerBucket.py
 0562812c8655f09773b8961fce5ec6e6 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerMachine.py
+4a8e3714d9d16b0298bf83529f6afb32 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py
 7699cb7dbf9d4d7f1ab41868f5a41ff7 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py
 28f0080827f1bd504d7bce62b58463ea /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/opencv_apps/msg/_Circle.py
 cf5fbf712e906da0bff84a2364accbf5 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/opencv_apps/msg/_CircleArray.py
@@ -138,6 +140,7 @@ b5b59eaa774a2252b79a4f07ecff21ce /home/dlab/ros_ws/devel/share/common-lisp/ros/e
 9c589f50c5892a3722781ee2207ddc3f /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointValues.lisp
 5b053c335d75a46555606d2468ea440b /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerBucket.lisp
 63fe4f108dfe29806afe56cd1e9916c6 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerMachine.lisp
+1b90ecc34c8d0be17205d62b855db9d0 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp
 6ff7c9976c828cbe8d6f273a22d62d30 /home/dlab/ros_ws/devel/share/common-lisp/ros/opencv_apps/msg/Circle.lisp
 d6d0ceb7303826e001060137fadc6521 /home/dlab/ros_ws/devel/share/common-lisp/ros/opencv_apps/msg/CircleArray.lisp
 8a997b69fe8f63b8d05341a0463df0aa /home/dlab/ros_ws/devel/share/common-lisp/ros/opencv_apps/msg/CircleArrayStamped.lisp
@@ -193,6 +196,7 @@ f10c5f97017faab961776ab010f70408 exp_excavator/CMakeFiles/_exp_excavator_generat
 2eebee881a6b4ecc5843e24baae1b9c9 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues
 182ea763630c0fd41fbbdaa6c7f326c2 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerBucket
 82f6a94c7fbc52467b227a1e673b39e1 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerMachine
+15a9bd00cc1cd223e50b92ffa265b045 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_StatePing
 9fb8af49d92b9ae95c8782cefe35498f exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp
 9fb8af49d92b9ae95c8782cefe35498f exp_excavator/CMakeFiles/exp_excavator_generate_messages_lisp
 9fb8af49d92b9ae95c8782cefe35498f exp_excavator/CMakeFiles/exp_excavator_generate_messages_py
@@ -219,6 +223,7 @@ c910ab5d3624be3e868e2dfc80ad1ec5 hardware_interface/CMakeFiles/run_tests_hardwar
 83be9a267a0f0f0adb54c8d76f822e68 hardware_interface/CMakeFiles/run_tests_hardware_interface_gtest_posvel_command_interface_test
 78e192d65aa95cc8b4cc1ec6dd06ac9e hardware_interface/CMakeFiles/run_tests_hardware_interface_gtest_posvelacc_command_interface_test
 f7fdc3a4b68047ed2e88d734adac3b9f hardware_interface/CMakeFiles/run_tests_hardware_interface_gtest_robot_hw_test
+0c1c486234815f0a0b805f3bb709509c librealsense/CMakeFiles/uninstall
 2d058c9c7f84a6ca028c1c7a4f61a01e opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_Circle
 80d755e985aadcc4c4ed12a36fbd1b70 opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_CircleArray
 3492376921fc49d6749e6918d1a6979b opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_CircleArrayStamped

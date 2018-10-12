@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/exp_excavator_generate_messages_py"
   "/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_Jacobian.py"
   "/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandArduino.py"
+  "/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py"
   "/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py"
   "/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCalibration.py"
   "/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py"

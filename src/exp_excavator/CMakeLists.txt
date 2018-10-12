@@ -59,6 +59,7 @@ add_message_files(
   JointStateMachineArduino.msg
   Jacobian.msg
   ForceWorld.msg
+  StatePing.msg
   )
 
 ## Generate services in the 'srv' folder

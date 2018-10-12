@@ -26,11 +26,13 @@ struct JointCommandDynamixel_
 
   JointCommandDynamixel_()
     : header()
-    , bucketV(0.0)  {
+    , bucketV(0.0)
+    , bucketP(0.0)  {
     }
   JointCommandDynamixel_(const ContainerAllocator& _alloc)
     : header(_alloc)
-    , bucketV(0.0)  {
+    , bucketV(0.0)
+    , bucketP(0.0)  {
   (void)_alloc;
     }
 
@@ -41,6 +43,9 @@ struct JointCommandDynamixel_
 
    typedef double _bucketV_type;
   _bucketV_type bucketV;
+
+   typedef double _bucketP_type;
+  _bucketP_type bucketP;
 
 
 
@@ -119,12 +124,12 @@ struct MD5Sum< ::exp_excavator::JointCommandDynamixel_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "639e61283d73fcaf119237a7509c96e9";
+    return "8cbe3711ac227927c7f2153f8850e46e";
   }
 
   static const char* value(const ::exp_excavator::JointCommandDynamixel_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x639e61283d73fcafULL;
-  static const uint64_t static_value2 = 0x119237a7509c96e9ULL;
+  static const uint64_t static_value1 = 0x8cbe3711ac227927ULL;
+  static const uint64_t static_value2 = 0xc7f2153f8850e46eULL;
 };
 
 template<class ContainerAllocator>
@@ -146,6 +151,8 @@ struct Definition< ::exp_excavator::JointCommandDynamixel_<ContainerAllocator> >
     return "Header header\n\
 \n\
 float64 bucketV\n\
+float64 bucketP\n\
+\n\
 \n\
 ================================================================================\n\
 MSG: std_msgs/Header\n\
@@ -184,6 +191,7 @@ namespace serialization
     {
       stream.next(m.header);
       stream.next(m.bucketV);
+      stream.next(m.bucketP);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -207,6 +215,8 @@ struct Printer< ::exp_excavator::JointCommandDynamixel_<ContainerAllocator> >
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "bucketV: ";
     Printer<double>::stream(s, indent + "  ", v.bucketV);
+    s << indent << "bucketP: ";
+    Printer<double>::stream(s, indent + "  ", v.bucketP);
   }
 };
 

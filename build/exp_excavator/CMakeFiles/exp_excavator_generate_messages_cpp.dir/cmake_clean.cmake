@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/exp_excavator_generate_messages_cpp"
   "/home/dlab/ros_ws/devel/include/exp_excavator/Jacobian.h"
   "/home/dlab/ros_ws/devel/include/exp_excavator/JointCommandArduino.h"
+  "/home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h"
   "/home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h"
   "/home/dlab/ros_ws/devel/include/exp_excavator/JointCalibration.h"
   "/home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h"

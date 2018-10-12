@@ -55,6 +55,7 @@ include exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp.dir/progres
 
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/Jacobian.h
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandArduino.h
+exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointCalibration.h
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h
@@ -78,55 +79,63 @@ exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from exp_excavator/JointCommandArduino.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
+/home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
+/home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h: /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg
+/home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from exp_excavator/StatePing.msg"
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
+
 /home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h: /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from exp_excavator/JointValues.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from exp_excavator/JointValues.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCalibration.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCalibration.h: /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCalibration.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from exp_excavator/JointCalibration.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from exp_excavator/JointCalibration.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h: /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from exp_excavator/JointCommandDynamixel.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from exp_excavator/JointCommandDynamixel.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerMachine.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerMachine.h: /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerMachine.h: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerMachine.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from exp_excavator/PowerMachine.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from exp_excavator/PowerMachine.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerBucket.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerBucket.h: /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerBucket.h: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/PowerBucket.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from exp_excavator/PowerBucket.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from exp_excavator/PowerBucket.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 /home/dlab/ros_ws/devel/include/exp_excavator/JointStateMachineArduino.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/JointStateMachineArduino.h: /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/JointStateMachineArduino.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from exp_excavator/JointStateMachineArduino.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from exp_excavator/JointStateMachineArduino.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 /home/dlab/ros_ws/devel/include/exp_excavator/ForceWorld.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py
 /home/dlab/ros_ws/devel/include/exp_excavator/ForceWorld.h: /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/ForceWorld.h: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
 /home/dlab/ros_ws/devel/include/exp_excavator/ForceWorld.h: /home/dlab/ros_catkin_ws/src/gencpp/scripts/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from exp_excavator/ForceWorld.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from exp_excavator/ForceWorld.msg"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/gencpp/scripts/gen_cpp.py /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/include/exp_excavator -e /home/dlab/ros_catkin_ws/src/gencpp/scripts
 
 exp_excavator_generate_messages_cpp: exp_excavator/CMakeFiles/exp_excavator_generate_messages_cpp
 exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/Jacobian.h
 exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandArduino.h
+exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/StatePing.h
 exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointValues.h
 exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointCalibration.h
 exp_excavator_generate_messages_cpp: /home/dlab/ros_ws/devel/include/exp_excavator/JointCommandDynamixel.h

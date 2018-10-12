@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/exp_excavator_generate_messages_lisp"
   "/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp"
   "/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandArduino.lisp"
+  "/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp"
   "/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointValues.lisp"
   "/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCalibration.lisp"
   "/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandDynamixel.lisp"

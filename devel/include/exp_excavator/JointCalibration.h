@@ -26,12 +26,14 @@ struct JointCalibration_
   JointCalibration_()
     : boom(0.0)
     , arm(0.0)
-    , bucket(0.0)  {
+    , bucket(0.0)
+    , success(false)  {
     }
   JointCalibration_(const ContainerAllocator& _alloc)
     : boom(0.0)
     , arm(0.0)
-    , bucket(0.0)  {
+    , bucket(0.0)
+    , success(false)  {
   (void)_alloc;
     }
 
@@ -45,6 +47,9 @@ struct JointCalibration_
 
    typedef double _bucket_type;
   _bucket_type bucket;
+
+   typedef uint8_t _success_type;
+  _success_type success;
 
 
 
@@ -123,12 +128,12 @@ struct MD5Sum< ::exp_excavator::JointCalibration_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "4a8559128caa4b31780f20e8b2b7c46f";
+    return "cd3e91ae926a8864e0ecf334cb247054";
   }
 
   static const char* value(const ::exp_excavator::JointCalibration_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x4a8559128caa4b31ULL;
-  static const uint64_t static_value2 = 0x780f20e8b2b7c46fULL;
+  static const uint64_t static_value1 = 0xcd3e91ae926a8864ULL;
+  static const uint64_t static_value2 = 0xe0ecf334cb247054ULL;
 };
 
 template<class ContainerAllocator>
@@ -150,6 +155,7 @@ struct Definition< ::exp_excavator::JointCalibration_<ContainerAllocator> >
     return "float64 boom\n\
 float64 arm\n\
 float64 bucket\n\
+bool success\n\
 ";
   }
 
@@ -171,6 +177,7 @@ namespace serialization
       stream.next(m.boom);
       stream.next(m.arm);
       stream.next(m.bucket);
+      stream.next(m.success);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -195,6 +202,8 @@ struct Printer< ::exp_excavator::JointCalibration_<ContainerAllocator> >
     Printer<double>::stream(s, indent + "  ", v.arm);
     s << indent << "bucket: ";
     Printer<double>::stream(s, indent + "  ", v.bucket);
+    s << indent << "success: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.success);
   }
 };
 

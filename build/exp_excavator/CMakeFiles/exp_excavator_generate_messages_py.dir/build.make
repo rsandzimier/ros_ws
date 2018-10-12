@@ -55,6 +55,7 @@ include exp_excavator/CMakeFiles/exp_excavator_generate_messages_py.dir/progress
 
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_Jacobian.py
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandArduino.py
+exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCalibration.py
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py
@@ -77,48 +78,55 @@ exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/d
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG exp_excavator/JointCommandArduino"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
+/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
+/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py: /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg
+/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG exp_excavator/StatePing"
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
+
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py: /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG exp_excavator/JointValues"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG exp_excavator/JointValues"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCalibration.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCalibration.py: /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG exp_excavator/JointCalibration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG exp_excavator/JointCalibration"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py: /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG exp_excavator/JointCommandDynamixel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG exp_excavator/JointCommandDynamixel"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerMachine.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerMachine.py: /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerMachine.py: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG exp_excavator/PowerMachine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG exp_excavator/PowerMachine"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerBucket.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerBucket.py: /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerBucket.py: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG exp_excavator/PowerBucket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG exp_excavator/PowerBucket"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointStateMachineArduino.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointStateMachineArduino.py: /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG exp_excavator/JointStateMachineArduino"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG exp_excavator/JointStateMachineArduino"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_ForceWorld.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_ForceWorld.py: /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_ForceWorld.py: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG exp_excavator/ForceWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python from MSG exp_excavator/ForceWorld"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg
 
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_Jacobian.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandArduino.py
+/home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCalibration.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py
@@ -126,12 +134,13 @@ exp_excavator/CMakeFiles/exp_excavator_generate_messages_py: /home/dlab/ros_ws/d
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_PowerBucket.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointStateMachineArduino.py
 /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/__init__.py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_ForceWorld.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python msg __init__.py for exp_excavator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python msg __init__.py for exp_excavator"
 	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genpy/scripts/genmsg_py.py -o /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg --initpy
 
 exp_excavator_generate_messages_py: exp_excavator/CMakeFiles/exp_excavator_generate_messages_py
 exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_Jacobian.py
 exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandArduino.py
+exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_StatePing.py
 exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointValues.py
 exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCalibration.py
 exp_excavator_generate_messages_py: /home/dlab/ros_ws/devel/lib/python2.7/dist-packages/exp_excavator/msg/_JointCommandDynamixel.py

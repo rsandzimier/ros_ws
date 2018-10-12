@@ -22,7 +22,13 @@ class DynamixelManager:
                                                 queue_size=10)
         
     def cb_spd_com(self, msg):
-        self.pub_joint_bucket.publish(name=['bucket_joint'],
+	if msg.bucketP != 0:
+		if msg.bucketV > 1 or msg.bucketV == 0:
+			msg.bucketV = 1
+		self.pub_joint_bucket.publish(name=['bucket_joint'],
+                                      velocity=[msg.bucketV],position=[msg.bucketP])
+	else:
+		self.pub_joint_bucket.publish(name=['bucket_joint'],
                                       velocity=[msg.bucketV])
 
 if __name__ == '__main__':

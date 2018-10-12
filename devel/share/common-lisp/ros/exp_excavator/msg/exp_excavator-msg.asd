@@ -9,6 +9,8 @@
     (:file "_package_JointCalibration" :depends-on ("_package"))
     (:file "Jacobian" :depends-on ("_package_Jacobian"))
     (:file "_package_Jacobian" :depends-on ("_package"))
+    (:file "StatePing" :depends-on ("_package_StatePing"))
+    (:file "_package_StatePing" :depends-on ("_package"))
     (:file "PowerBucket" :depends-on ("_package_PowerBucket"))
     (:file "_package_PowerBucket" :depends-on ("_package"))
     (:file "JointCommandDynamixel" :depends-on ("_package_JointCommandDynamixel"))

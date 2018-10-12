@@ -21,7 +21,12 @@
     :reader bucket
     :initarg :bucket
     :type cl:float
-    :initform 0.0))
+    :initform 0.0)
+   (success
+    :reader success
+    :initarg :success
+    :type cl:boolean
+    :initform cl:nil))
 )
 
 (cl:defclass JointCalibration (<JointCalibration>)
@@ -46,6 +51,11 @@
 (cl:defmethod bucket-val ((m <JointCalibration>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader exp_excavator-msg:bucket-val is deprecated.  Use exp_excavator-msg:bucket instead.")
   (bucket m))
+
+(cl:ensure-generic-function 'success-val :lambda-list '(m))
+(cl:defmethod success-val ((m <JointCalibration>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader exp_excavator-msg:success-val is deprecated.  Use exp_excavator-msg:success instead.")
+  (success m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <JointCalibration>) ostream)
   "Serializes a message object of type '<JointCalibration>"
   (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'boom))))
@@ -75,6 +85,7 @@
     (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'success) 1 0)) ostream)
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <JointCalibration>) istream)
   "Deserializes a message object of type '<JointCalibration>"
@@ -108,6 +119,7 @@
       (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
     (cl:setf (cl:slot-value msg 'bucket) (roslisp-utils:decode-double-float-bits bits)))
+    (cl:setf (cl:slot-value msg 'success) (cl:not (cl:zerop (cl:read-byte istream))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<JointCalibration>)))
@@ -118,21 +130,22 @@
   "exp_excavator/JointCalibration")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<JointCalibration>)))
   "Returns md5sum for a message object of type '<JointCalibration>"
-  "4a8559128caa4b31780f20e8b2b7c46f")
+  "cd3e91ae926a8864e0ecf334cb247054")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'JointCalibration)))
   "Returns md5sum for a message object of type 'JointCalibration"
-  "4a8559128caa4b31780f20e8b2b7c46f")
+  "cd3e91ae926a8864e0ecf334cb247054")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<JointCalibration>)))
   "Returns full string definition for message of type '<JointCalibration>"
-  (cl:format cl:nil "float64 boom~%float64 arm~%float64 bucket~%~%~%"))
+  (cl:format cl:nil "float64 boom~%float64 arm~%float64 bucket~%bool success~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'JointCalibration)))
   "Returns full string definition for message of type 'JointCalibration"
-  (cl:format cl:nil "float64 boom~%float64 arm~%float64 bucket~%~%~%"))
+  (cl:format cl:nil "float64 boom~%float64 arm~%float64 bucket~%bool success~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <JointCalibration>))
   (cl:+ 0
      8
      8
      8
+     1
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <JointCalibration>))
   "Converts a ROS message object to a list"
@@ -140,4 +153,5 @@
     (cl:cons ':boom (boom msg))
     (cl:cons ':arm (arm msg))
     (cl:cons ':bucket (bucket msg))
+    (cl:cons ':success (success msg))
 ))

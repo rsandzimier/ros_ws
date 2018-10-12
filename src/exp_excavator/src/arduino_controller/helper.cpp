@@ -267,7 +267,7 @@ float motorClass::closedLoopControllerPositionCascade(void){
   float term_test;*/
  
   errorPos = referencePosition - encoderpos;
-  speedCommand = constrain(Kp_cascade*errorPos,-20,20);
+  speedCommand = constrain(Kp_cascade*errorPos,-40,40);
 
   return speedCommand;
 }
