@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_CircleArrayStamped.dir/progress.make
 
 opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_CircleArrayStamped:
-	cd /home/dlab/ros_ws/build/opencv_apps && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genmsg/scripts/genmsg_check_deps.py opencv_apps /home/dlab/ros_ws/src/opencv_apps/msg/CircleArrayStamped.msg opencv_apps/Circle:opencv_apps/Point2D:std_msgs/Header
+	cd /home/dlab/ros_ws/build/opencv_apps && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py opencv_apps /home/dlab/ros_ws/src/opencv_apps/msg/CircleArrayStamped.msg opencv_apps/Circle:opencv_apps/Point2D:std_msgs/Header
 
 _opencv_apps_generate_messages_check_deps_CircleArrayStamped: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_CircleArrayStamped
 _opencv_apps_generate_messages_check_deps_CircleArrayStamped: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_CircleArrayStamped.dir/build.make

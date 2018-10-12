@@ -65,62 +65,62 @@ exp_excavator/CMakeFiles/exp_excavator_generate_messages_lisp: /home/dlab/ros_ws
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_lisp: /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/ForceWorld.lisp
 
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from exp_excavator/Jacobian.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/Jacobian.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandArduino.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandArduino.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandArduino.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandArduino.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandArduino.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from exp_excavator/JointCommandArduino.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/StatePing.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from exp_excavator/StatePing.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/StatePing.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointValues.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointValues.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointValues.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from exp_excavator/JointValues.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointValues.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCalibration.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCalibration.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCalibration.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from exp_excavator/JointCalibration.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCalibration.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandDynamixel.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandDynamixel.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandDynamixel.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandDynamixel.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointCommandDynamixel.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from exp_excavator/JointCommandDynamixel.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointCommandDynamixel.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerMachine.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerMachine.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerMachine.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerMachine.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerMachine.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from exp_excavator/PowerMachine.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerMachine.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerBucket.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerBucket.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerBucket.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerBucket.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/PowerBucket.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from exp_excavator/PowerBucket.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/PowerBucket.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointStateMachineArduino.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointStateMachineArduino.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/JointStateMachineArduino.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from exp_excavator/JointStateMachineArduino.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/JointStateMachineArduino.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/ForceWorld.lisp: /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/ForceWorld.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/ForceWorld.lisp: /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg
-/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/ForceWorld.lisp: /home/dlab/ros_catkin_ws/src/std_msgs/msg/Header.msg
+/home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/ForceWorld.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlab/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from exp_excavator/ForceWorld.msg"
-	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genlisp/scripts/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
+	cd /home/dlab/ros_ws/build/exp_excavator && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dlab/ros_ws/src/exp_excavator/msg/ForceWorld.msg -Iexp_excavator:/home/dlab/ros_ws/src/exp_excavator/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p exp_excavator -o /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg
 
 exp_excavator_generate_messages_lisp: exp_excavator/CMakeFiles/exp_excavator_generate_messages_lisp
 exp_excavator_generate_messages_lisp: /home/dlab/ros_ws/devel/share/common-lisp/ros/exp_excavator/msg/Jacobian.lisp

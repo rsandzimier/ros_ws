@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/home/dlab/ros_catkin_ws/src/ros_comm/rostest/include;/usr/include")
+set(ORDERED_PATHS "/opt/ros/kinetic/include;/usr/include")

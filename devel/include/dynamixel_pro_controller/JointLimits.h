@@ -49,6 +49,7 @@ struct JointLimits_
 
 
 
+
   typedef boost::shared_ptr< ::dynamixel_pro_controller::JointLimits_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::dynamixel_pro_controller::JointLimits_<ContainerAllocator> const> ConstPtr;
 
@@ -80,7 +81,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/home/dlab/ros_catkin_ws/src/std_msgs/msg'], 'sensor_msgs': ['/home/dlab/ros_catkin_ws/src/common_msgs/sensor_msgs/msg'], 'geometry_msgs': ['/home/dlab/ros_catkin_ws/src/common_msgs/geometry_msgs/msg'], 'dynamixel_pro_controller': ['/home/dlab/ros_ws/src/dynamixel_pro_controller/msg']}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg'], 'dynamixel_pro_controller': ['/home/dlab/ros_ws/src/dynamixel_pro_controller/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 

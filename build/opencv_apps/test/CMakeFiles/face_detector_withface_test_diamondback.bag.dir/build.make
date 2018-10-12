@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include opencv_apps/test/CMakeFiles/face_detector_withface_test_diamondback.bag.dir/progress.make
 
 opencv_apps/test/CMakeFiles/face_detector_withface_test_diamondback.bag:
-	cd /home/dlab/ros_ws/build/opencv_apps/test && /home/dlab/ros_catkin_ws/src/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/face_detector/face_detector_withface_test_diamondback.bag /home/dlab/ros_ws/src/opencv_apps/test/face_detector_withface_test_diamondback.bag 59126117e049e69d577b7ee27251a6f8 --ignore-error
+	cd /home/dlab/ros_ws/build/opencv_apps/test && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/face_detector/face_detector_withface_test_diamondback.bag /home/dlab/ros_ws/src/opencv_apps/test/face_detector_withface_test_diamondback.bag 59126117e049e69d577b7ee27251a6f8 --ignore-error
 
 face_detector_withface_test_diamondback.bag: opencv_apps/test/CMakeFiles/face_detector_withface_test_diamondback.bag
 face_detector_withface_test_diamondback.bag: opencv_apps/test/CMakeFiles/face_detector_withface_test_diamondback.bag.dir/build.make

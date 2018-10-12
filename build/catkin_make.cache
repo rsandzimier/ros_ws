@@ -1,2 +1,2 @@
-apriltags_ros-indigo-devel/apriltags:apriltags_ros-indigo-devel/apriltags_ros:controller_interface:depth_cam:dynamixel_pro_controller:dynamixel_pro_driver:epos_hardware/epos_hardware:epos_hardware/epos_library:ex_model:exp_excavator:hardware_interface:librealsense:opencv_apps:opt_flow:optoforce:transmission_interface:um7:usb_cam:video_stream_opencv:wjwwood-serial-827c4a7
+depth_cam:dynamixel_pro_controller:dynamixel_pro_driver:epos_hardware/epos_hardware:epos_hardware/epos_library:ex_model:exp_excavator:opencv_apps:opt_flow:optoforce:usb_cam:video_stream_opencv:wjwwood-serial-827c4a7
 -DCATKIN_DEVEL_PREFIX=/home/dlab/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dlab/ros_ws/install -G Unix Makefiles

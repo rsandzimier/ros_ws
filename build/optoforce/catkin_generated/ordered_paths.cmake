@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib;/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib;/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib")
+set(ORDERED_PATHS "/opt/ros/kinetic/lib")

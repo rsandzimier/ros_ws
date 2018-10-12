@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include dynamixel_pro_controller/CMakeFiles/_dynamixel_pro_controller_generate_messages_check_deps_JointEnable.dir/progress.make
 
 dynamixel_pro_controller/CMakeFiles/_dynamixel_pro_controller_generate_messages_check_deps_JointEnable:
-	cd /home/dlab/ros_ws/build/dynamixel_pro_controller && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genmsg/scripts/genmsg_check_deps.py dynamixel_pro_controller /home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg 
+	cd /home/dlab/ros_ws/build/dynamixel_pro_controller && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dynamixel_pro_controller /home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg 
 
 _dynamixel_pro_controller_generate_messages_check_deps_JointEnable: dynamixel_pro_controller/CMakeFiles/_dynamixel_pro_controller_generate_messages_check_deps_JointEnable
 _dynamixel_pro_controller_generate_messages_check_deps_JointEnable: dynamixel_pro_controller/CMakeFiles/_dynamixel_pro_controller_generate_messages_check_deps_JointEnable.dir/build.make

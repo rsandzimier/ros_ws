@@ -19,40 +19,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/dlab/ros_ws/src/epos_hardware/epos_hardware/include"
   "/home/dlab/ros_ws/src/epos_hardware/epos_library/include"
-  "/home/dlab/ros_ws/src/hardware_interface/include"
-  "/home/dlab/ros_ws/src/transmission_interface/include"
-  "/home/dlab/ros_ws/src/controller_interface/include"
-  "/home/dlab/ros_catkin_ws/src/diagnostics/diagnostic_updater/include"
-  "/home/dlab/ros_catkin_ws/src/ros_control/controller_manager/include"
-  "/home/dlab/ros_catkin_ws/src/realtime_tools/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/roscpp/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/roscpp/include/ros"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/roscpp/include"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/xmlrpcpp/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/rosgraph_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/diagnostic_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/controller_manager_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/std_msgs/include"
-  "/home/dlab/ros_catkin_ws/src/std_msgs/include"
-  "/home/dlab/ros_catkin_ws/src/resource_retriever/include"
-  "/home/dlab/ros_catkin_ws/src/pluginlib/include"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/rosconsole/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/roscpp_serialization/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/rostime/include"
-  "/home/dlab/ros_catkin_ws/src/ros/roslib/include"
-  "/home/dlab/ros_catkin_ws/src/rospack/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/roscpp_traits/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/cpp_common/include"
-  "/home/dlab/ros_catkin_ws/src/class_loader/include"
+  "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/dlab/ros_ws/build/epos_hardware/epos_library/CMakeFiles/ftd2xx.dir/DependInfo.cmake"
   "/home/dlab/ros_ws/build/epos_hardware/epos_library/CMakeFiles/EposCmd.dir/DependInfo.cmake"
-  "/home/dlab/ros_ws/build/transmission_interface/CMakeFiles/transmission_interface_loader_plugins.dir/DependInfo.cmake"
-  "/home/dlab/ros_ws/build/transmission_interface/CMakeFiles/transmission_interface_loader.dir/DependInfo.cmake"
-  "/home/dlab/ros_ws/build/transmission_interface/CMakeFiles/transmission_interface_parser.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

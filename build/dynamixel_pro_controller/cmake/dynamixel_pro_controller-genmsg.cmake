@@ -2,11 +2,13 @@
 
 message(STATUS "dynamixel_pro_controller: 4 messages, 0 services")
 
-set(MSG_I_FLAGS "-Idynamixel_pro_controller:/home/dlab/ros_ws/src/dynamixel_pro_controller/msg;-Isensor_msgs:/home/dlab/ros_catkin_ws/src/common_msgs/sensor_msgs/msg;-Istd_msgs:/home/dlab/ros_catkin_ws/src/std_msgs/msg;-Igeometry_msgs:/home/dlab/ros_catkin_ws/src/common_msgs/geometry_msgs/msg")
+set(MSG_I_FLAGS "-Idynamixel_pro_controller:/home/dlab/ros_ws/src/dynamixel_pro_controller/msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
+find_package(geneus REQUIRED)
 find_package(genlisp REQUIRED)
+find_package(gennodejs REQUIRED)
 find_package(genpy REQUIRED)
 
 add_custom_target(dynamixel_pro_controller_generate_messages ALL)
@@ -36,7 +38,7 @@ add_custom_target(_dynamixel_pro_controller_generate_messages_check_deps_${_file
 )
 
 #
-#  langs = gencpp;genlisp;genpy
+#  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
 
 ### Section generating for lang: gencpp
@@ -96,6 +98,63 @@ add_dependencies(dynamixel_pro_controller_gencpp dynamixel_pro_controller_genera
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_pro_controller_generate_messages_cpp)
 
+### Section generating for lang: geneus
+### Generating Messages
+_generate_msg_eus(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainEnable.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller
+)
+_generate_msg_eus(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointLimits.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller
+)
+_generate_msg_eus(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainLimits.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointLimits.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller
+)
+_generate_msg_eus(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller
+)
+
+### Generating Services
+
+### Generating Module File
+_generate_module_eus(dynamixel_pro_controller
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller
+  "${ALL_GEN_OUTPUT_FILES_eus}"
+)
+
+add_custom_target(dynamixel_pro_controller_generate_messages_eus
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_eus}
+)
+add_dependencies(dynamixel_pro_controller_generate_messages dynamixel_pro_controller_generate_messages_eus)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainEnable.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_eus _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointLimits.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_eus _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainLimits.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_eus _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_eus _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(dynamixel_pro_controller_geneus)
+add_dependencies(dynamixel_pro_controller_geneus dynamixel_pro_controller_generate_messages_eus)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_pro_controller_generate_messages_eus)
+
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(dynamixel_pro_controller
@@ -152,6 +211,63 @@ add_dependencies(dynamixel_pro_controller_genlisp dynamixel_pro_controller_gener
 
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_pro_controller_generate_messages_lisp)
+
+### Section generating for lang: gennodejs
+### Generating Messages
+_generate_msg_nodejs(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainEnable.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller
+)
+_generate_msg_nodejs(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointLimits.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller
+)
+_generate_msg_nodejs(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainLimits.msg"
+  "${MSG_I_FLAGS}"
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointLimits.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller
+)
+_generate_msg_nodejs(dynamixel_pro_controller
+  "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller
+)
+
+### Generating Services
+
+### Generating Module File
+_generate_module_nodejs(dynamixel_pro_controller
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller
+  "${ALL_GEN_OUTPUT_FILES_nodejs}"
+)
+
+add_custom_target(dynamixel_pro_controller_generate_messages_nodejs
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_nodejs}
+)
+add_dependencies(dynamixel_pro_controller_generate_messages dynamixel_pro_controller_generate_messages_nodejs)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainEnable.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_nodejs _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointLimits.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_nodejs _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/ChainLimits.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_nodejs _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dlab/ros_ws/src/dynamixel_pro_controller/msg/JointEnable.msg" NAME_WE)
+add_dependencies(dynamixel_pro_controller_generate_messages_nodejs _dynamixel_pro_controller_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(dynamixel_pro_controller_gennodejs)
+add_dependencies(dynamixel_pro_controller_gennodejs dynamixel_pro_controller_generate_messages_nodejs)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_pro_controller_generate_messages_nodejs)
 
 ### Section generating for lang: genpy
 ### Generating Messages
@@ -229,6 +345,23 @@ if(TARGET geometry_msgs_generate_messages_cpp)
   add_dependencies(dynamixel_pro_controller_generate_messages_cpp geometry_msgs_generate_messages_cpp)
 endif()
 
+if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_pro_controller
+    DESTINATION ${geneus_INSTALL_DIR}
+  )
+endif()
+if(TARGET sensor_msgs_generate_messages_eus)
+  add_dependencies(dynamixel_pro_controller_generate_messages_eus sensor_msgs_generate_messages_eus)
+endif()
+if(TARGET std_msgs_generate_messages_eus)
+  add_dependencies(dynamixel_pro_controller_generate_messages_eus std_msgs_generate_messages_eus)
+endif()
+if(TARGET geometry_msgs_generate_messages_eus)
+  add_dependencies(dynamixel_pro_controller_generate_messages_eus geometry_msgs_generate_messages_eus)
+endif()
+
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_pro_controller)
   # install generated code
   install(
@@ -244,6 +377,23 @@ if(TARGET std_msgs_generate_messages_lisp)
 endif()
 if(TARGET geometry_msgs_generate_messages_lisp)
   add_dependencies(dynamixel_pro_controller_generate_messages_lisp geometry_msgs_generate_messages_lisp)
+endif()
+
+if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_pro_controller
+    DESTINATION ${gennodejs_INSTALL_DIR}
+  )
+endif()
+if(TARGET sensor_msgs_generate_messages_nodejs)
+  add_dependencies(dynamixel_pro_controller_generate_messages_nodejs sensor_msgs_generate_messages_nodejs)
+endif()
+if(TARGET std_msgs_generate_messages_nodejs)
+  add_dependencies(dynamixel_pro_controller_generate_messages_nodejs std_msgs_generate_messages_nodejs)
+endif()
+if(TARGET geometry_msgs_generate_messages_nodejs)
+  add_dependencies(dynamixel_pro_controller_generate_messages_nodejs geometry_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_pro_controller)

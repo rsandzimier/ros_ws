@@ -10,4 +10,7 @@ set(epos_hardware_EXEC_DEPENDS "epos_library" "hardware_interface" "transmission
 set(epos_hardware_RUN_DEPENDS "epos_library" "hardware_interface" "transmission_interface" "controller_manager" "roscpp" "diagnostic_updater")
 set(epos_hardware_TEST_DEPENDS )
 set(epos_hardware_DOC_DEPENDS )
+set(epos_hardware_URL_WEBSITE "")
+set(epos_hardware_URL_BUGTRACKER "")
+set(epos_hardware_URL_REPOSITORY "https://github.com/RIVeR-Lab/epos_hardware")
 set(epos_hardware_DEPRECATED "")

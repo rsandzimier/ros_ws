@@ -50,7 +50,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/dlab/ros_ws/devel/share/roseus/ros/dynamixel_pro_controller")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/dlab/ros_ws/devel/share/common-lisp/ros/dynamixel_pro_controller")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/dlab/ros_ws/devel/share/gennodejs/ros/dynamixel_pro_controller")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -92,7 +100,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_pro_controller/dynamixel_pro_controller_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_pro_controller/dynamixel_pro_controller_node"
-         OLD_RPATH "/home/dlab/ros_ws/devel/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/home/dlab/ros_ws/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_pro_controller/dynamixel_pro_controller_node")

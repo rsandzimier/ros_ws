@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python /home/dlab/ros_catkin_ws/src/catkin/cmake/test/remove_test_results.py /home/dlab/ros_ws/build/test_results
+	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/dlab/ros_ws/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

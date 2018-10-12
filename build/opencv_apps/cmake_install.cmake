@@ -190,7 +190,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/dlab/ros_ws/devel/share/roseus/ros/opencv_apps")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/dlab/ros_ws/devel/share/common-lisp/ros/opencv_apps")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/dlab/ros_ws/devel/share/gennodejs/ros/opencv_apps")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -232,7 +240,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopencv_apps.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopencv_apps.so"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopencv_apps.so")
@@ -256,7 +264,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/adding_images")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/adding_images"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/adding_images")
@@ -276,7 +284,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/discrete_fourier_transform")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/discrete_fourier_transform"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/discrete_fourier_transform")
@@ -296,7 +304,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/smoothing")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/smoothing"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/smoothing")
@@ -316,7 +324,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/threshold")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/threshold"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/threshold")
@@ -336,7 +344,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/rgb_color_filter")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/rgb_color_filter"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/rgb_color_filter")
@@ -356,7 +364,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hls_color_filter")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hls_color_filter"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hls_color_filter")
@@ -376,7 +384,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hsv_color_filter")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hsv_color_filter"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hsv_color_filter")
@@ -396,7 +404,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/edge_detection")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/edge_detection"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/edge_detection")
@@ -416,7 +424,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hough_lines")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hough_lines"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hough_lines")
@@ -436,7 +444,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hough_circles")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hough_circles"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/hough_circles")
@@ -456,7 +464,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/find_contours")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/find_contours"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/find_contours")
@@ -476,7 +484,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/convex_hull")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/convex_hull"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/convex_hull")
@@ -496,7 +504,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/general_contours")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/general_contours"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/general_contours")
@@ -516,7 +524,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/contour_moments")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/contour_moments"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/contour_moments")
@@ -536,7 +544,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/goodfeature_track")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/goodfeature_track"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/goodfeature_track")
@@ -556,7 +564,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/corner_harris")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/corner_harris"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/corner_harris")
@@ -576,7 +584,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/camshift")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/camshift"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/camshift")
@@ -596,7 +604,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/face_detection")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/face_detection"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/face_detection")
@@ -616,7 +624,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/fback_flow")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/fback_flow"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/fback_flow")
@@ -636,7 +644,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/lk_flow")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/lk_flow"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/lk_flow")
@@ -656,7 +664,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/people_detect")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/people_detect"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/people_detect")
@@ -676,7 +684,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/phase_corr")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/phase_corr"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/phase_corr")
@@ -696,7 +704,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/segment_objects")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/segment_objects"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/segment_objects")
@@ -716,7 +724,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/watershed_segmentation")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/watershed_segmentation"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/watershed_segmentation")
@@ -736,7 +744,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_example")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_example"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_example")
@@ -756,7 +764,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_compressed_example")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_compressed_example"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_compressed_example")
@@ -776,7 +784,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_flow")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_flow"
-         OLD_RPATH "/home/dlab/ros_catkin_ws/devel_isolated/cv_bridge/lib:/home/dlab/ros_catkin_ws/devel_isolated/dynamic_reconfigure/lib:/home/dlab/ros_catkin_ws/devel_isolated/image_transport/lib:/home/dlab/ros_catkin_ws/devel_isolated/message_filters/lib:/home/dlab/ros_catkin_ws/devel_isolated/nodelet/lib:/home/dlab/ros_catkin_ws/devel_isolated/bondcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/class_loader/lib:/home/dlab/ros_catkin_ws/devel_isolated/roslib/lib:/home/dlab/ros_catkin_ws/devel_isolated/rospack/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/rosconsole/lib:/home/dlab/ros_catkin_ws/devel_isolated/roscpp_serialization/lib:/home/dlab/ros_catkin_ws/devel_isolated/rostime/lib:/home/dlab/ros_catkin_ws/devel_isolated/xmlrpcpp/lib:/home/dlab/ros_catkin_ws/devel_isolated/cpp_common/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opencv_apps/simple_flow")

@@ -68,6 +68,28 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -110,28 +132,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,19 +181,34 @@ std_srvs_generate_messages_lisp/fast:
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 # Convenience name for target.
-usb_cam/CMakeFiles/usb_cam.dir/rule:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 usb_cam/CMakeFiles/usb_cam.dir/rule
-.PHONY : usb_cam/CMakeFiles/usb_cam.dir/rule
+usb_cam/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 usb_cam/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : usb_cam/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-usb_cam: usb_cam/CMakeFiles/usb_cam.dir/rule
+std_srvs_generate_messages_eus: usb_cam/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
-.PHONY : usb_cam
+.PHONY : std_srvs_generate_messages_eus
 
 # fast build rule for target.
-usb_cam/fast:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
-.PHONY : usb_cam/fast
+std_srvs_generate_messages_eus/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f usb_cam/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make usb_cam/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+# Convenience name for target.
+usb_cam/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 usb_cam/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : usb_cam/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: usb_cam/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f usb_cam/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make usb_cam/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 usb_cam/CMakeFiles/usb_cam_node.dir/rule:
@@ -209,6 +224,21 @@ usb_cam_node: usb_cam/CMakeFiles/usb_cam_node.dir/rule
 usb_cam_node/fast:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/build
 .PHONY : usb_cam_node/fast
+
+# Convenience name for target.
+usb_cam/CMakeFiles/usb_cam.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 usb_cam/CMakeFiles/usb_cam.dir/rule
+.PHONY : usb_cam/CMakeFiles/usb_cam.dir/rule
+
+# Convenience name for target.
+usb_cam: usb_cam/CMakeFiles/usb_cam.dir/rule
+
+.PHONY : usb_cam
+
+# fast build rule for target.
+usb_cam/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
+.PHONY : usb_cam/fast
 
 # Convenience name for target.
 usb_cam/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
@@ -301,17 +331,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... usb_cam"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... usb_cam_node"
+	@echo "... usb_cam"
 	@echo "... list_install_components"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... test"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... nodes/usb_cam_node.o"
 	@echo "... nodes/usb_cam_node.i"
 	@echo "... nodes/usb_cam_node.s"

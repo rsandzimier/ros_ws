@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include wjwwood-serial-827c4a7/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/progress.make
 
 wjwwood-serial-827c4a7/tests/CMakeFiles/run_tests_serial_gtest_serial-test:
-	cd /home/dlab/ros_ws/build/wjwwood-serial-827c4a7/tests && ../../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/catkin/cmake/test/run_tests.py /home/dlab/ros_ws/build/test_results/serial/gtest-serial-test.xml /home/dlab/ros_ws/devel/lib/serial/serial-test\ --gtest_output=xml:/home/dlab/ros_ws/build/test_results/serial/gtest-serial-test.xml
+	cd /home/dlab/ros_ws/build/wjwwood-serial-827c4a7/tests && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/dlab/ros_ws/build/test_results/serial/gtest-serial-test.xml "/home/dlab/ros_ws/devel/lib/serial/serial-test --gtest_output=xml:/home/dlab/ros_ws/build/test_results/serial/gtest-serial-test.xml"
 
 run_tests_serial_gtest_serial-test: wjwwood-serial-827c4a7/tests/CMakeFiles/run_tests_serial_gtest_serial-test
 run_tests_serial_gtest_serial-test: wjwwood-serial-827c4a7/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/build.make

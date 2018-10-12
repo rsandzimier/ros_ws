@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include opencv_apps/test/CMakeFiles/vslam_tutorial.bag.dir/progress.make
 
 opencv_apps/test/CMakeFiles/vslam_tutorial.bag:
-	cd /home/dlab/ros_ws/build/opencv_apps/test && /home/dlab/ros_catkin_ws/src/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/vslam_system/vslam_tutorial.bag /home/dlab/ros_ws/build/opencv_apps/test/vslam_tutorial.bag f5aece448b7af00a38a993eb71400806 --ignore-error
+	cd /home/dlab/ros_ws/build/opencv_apps/test && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/vslam_system/vslam_tutorial.bag /home/dlab/ros_ws/build/opencv_apps/test/vslam_tutorial.bag f5aece448b7af00a38a993eb71400806 --ignore-error
 
 vslam_tutorial.bag: opencv_apps/test/CMakeFiles/vslam_tutorial.bag
 vslam_tutorial.bag: opencv_apps/test/CMakeFiles/vslam_tutorial.bag.dir/build.make

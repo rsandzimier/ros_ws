@@ -57,11 +57,8 @@ bool enable"""
       if python3 or type(_x) == unicode:
         _x = _x.encode('utf-8')
         length = len(_x)
-      if python3:
-        buff.write(struct.pack('<I%sB'%length, length, *_x))
-      else:
-        buff.write(struct.pack('<I%ss'%length, length, _x))
-      buff.write(_struct_B.pack(self.enable))
+      buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(_get_struct_B().pack(self.enable))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -83,7 +80,7 @@ bool enable"""
         self.name = str[start:end]
       start = end
       end += 1
-      (self.enable,) = _struct_B.unpack(str[start:end])
+      (self.enable,) = _get_struct_B().unpack(str[start:end])
       self.enable = bool(self.enable)
       return self
     except struct.error as e:
@@ -102,11 +99,8 @@ bool enable"""
       if python3 or type(_x) == unicode:
         _x = _x.encode('utf-8')
         length = len(_x)
-      if python3:
-        buff.write(struct.pack('<I%sB'%length, length, *_x))
-      else:
-        buff.write(struct.pack('<I%ss'%length, length, _x))
-      buff.write(_struct_B.pack(self.enable))
+      buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(_get_struct_B().pack(self.enable))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -129,11 +123,19 @@ bool enable"""
         self.name = str[start:end]
       start = end
       end += 1
-      (self.enable,) = _struct_B.unpack(str[start:end])
+      (self.enable,) = _get_struct_B().unpack(str[start:end])
       self.enable = bool(self.enable)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_B = struct.Struct("<B")
+def _get_struct_I():
+    global _struct_I
+    return _struct_I
+_struct_B = None
+def _get_struct_B():
+    global _struct_B
+    if _struct_B is None:
+        _struct_B = struct.Struct("<B")
+    return _struct_B

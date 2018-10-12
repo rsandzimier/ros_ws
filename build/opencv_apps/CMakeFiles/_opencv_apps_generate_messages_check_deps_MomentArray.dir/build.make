@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArray.dir/progress.make
 
 opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArray:
-	cd /home/dlab/ros_ws/build/opencv_apps && ../catkin_generated/env_cached.sh /usr/bin/python /home/dlab/ros_catkin_ws/src/genmsg/scripts/genmsg_check_deps.py opencv_apps /home/dlab/ros_ws/src/opencv_apps/msg/MomentArray.msg opencv_apps/Point2D:opencv_apps/Moment
+	cd /home/dlab/ros_ws/build/opencv_apps && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py opencv_apps /home/dlab/ros_ws/src/opencv_apps/msg/MomentArray.msg opencv_apps/Point2D:opencv_apps/Moment
 
 _opencv_apps_generate_messages_check_deps_MomentArray: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArray
 _opencv_apps_generate_messages_check_deps_MomentArray: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArray.dir/build.make

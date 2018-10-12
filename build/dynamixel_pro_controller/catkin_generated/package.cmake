@@ -10,4 +10,7 @@ set(dynamixel_pro_controller_EXEC_DEPENDS "yaml-cpp" "dynamixel_pro_driver" "ros
 set(dynamixel_pro_controller_RUN_DEPENDS "yaml-cpp" "dynamixel_pro_driver" "roscpp" "roslib" "sensor_msgs" "message_generation")
 set(dynamixel_pro_controller_TEST_DEPENDS )
 set(dynamixel_pro_controller_DOC_DEPENDS )
+set(dynamixel_pro_controller_URL_WEBSITE "")
+set(dynamixel_pro_controller_URL_BUGTRACKER "")
+set(dynamixel_pro_controller_URL_REPOSITORY "")
 set(dynamixel_pro_controller_DEPRECATED "")

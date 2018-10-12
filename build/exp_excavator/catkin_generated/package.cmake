@@ -10,4 +10,7 @@ set(exp_excavator_EXEC_DEPENDS "epos_hardware" "joy" "roscpp" "rospy" "std_msgs"
 set(exp_excavator_RUN_DEPENDS "epos_hardware" "joy" "roscpp" "rospy" "std_msgs" "geometry_msgs" "message_runtime")
 set(exp_excavator_TEST_DEPENDS )
 set(exp_excavator_DOC_DEPENDS )
+set(exp_excavator_URL_WEBSITE "")
+set(exp_excavator_URL_BUGTRACKER "")
+set(exp_excavator_URL_REPOSITORY "")
 set(exp_excavator_DEPRECATED "")

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include opencv_apps/CMakeFiles/clean_test_results_opencv_apps.dir/progress.make
 
 opencv_apps/CMakeFiles/clean_test_results_opencv_apps:
-	cd /home/dlab/ros_ws/build/opencv_apps && /usr/bin/python /home/dlab/ros_catkin_ws/src/catkin/cmake/test/remove_test_results.py /home/dlab/ros_ws/build/test_results/opencv_apps
+	cd /home/dlab/ros_ws/build/opencv_apps && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/dlab/ros_ws/build/test_results/opencv_apps
 
 clean_test_results_opencv_apps: opencv_apps/CMakeFiles/clean_test_results_opencv_apps
 clean_test_results_opencv_apps: opencv_apps/CMakeFiles/clean_test_results_opencv_apps.dir/build.make

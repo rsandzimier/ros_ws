@@ -346,19 +346,19 @@ run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test/fast:
 .PHONY : run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test/fast
 
 # Convenience name for target.
-opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule
-.PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule
+opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
+.PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
 
 # Convenience name for target.
-_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test: opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule
+run_tests_opencv_apps_rostest_test-smoothing__gui_false.test: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
 
-.PHONY : _run_tests_opencv_apps_rostest_test-face_detection__gui_false.test
+.PHONY : run_tests_opencv_apps_rostest_test-smoothing__gui_false.test
 
 # fast build rule for target.
-_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test/fast:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/build
-.PHONY : _run_tests_opencv_apps_rostest_test-face_detection__gui_false.test/fast
+run_tests_opencv_apps_rostest_test-smoothing__gui_false.test/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/build
+.PHONY : run_tests_opencv_apps_rostest_test-smoothing__gui_false.test/fast
 
 # Convenience name for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-goodfeature_track__gui_false.test.dir/rule:
@@ -404,6 +404,21 @@ _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_te
 _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-hsv_color_filter.test/fast:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-hsv_color_filter.test.dir/build.make opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-hsv_color_filter.test.dir/build
 .PHONY : _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-hsv_color_filter.test/fast
+
+# Convenience name for target.
+opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
+.PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
+
+# Convenience name for target.
+run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
+
+.PHONY : run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test
+
+# fast build rule for target.
+run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/build
+.PHONY : run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test/fast
 
 # Convenience name for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-lk_flow.test.dir/rule:
@@ -526,36 +541,6 @@ run_tests_opencv_apps_rostest_test-convex_hull__gui_false.test/fast:
 .PHONY : run_tests_opencv_apps_rostest_test-convex_hull__gui_false.test/fast
 
 # Convenience name for target.
-opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
-.PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
-
-# Convenience name for target.
-run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
-
-.PHONY : run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test
-
-# fast build rule for target.
-run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test/fast:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/build
-.PHONY : run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test/fast
-
-# Convenience name for target.
-opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule
-.PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule
-
-# Convenience name for target.
-run_tests_opencv_apps_rostest_test-face_detection__gui_false.test: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/rule
-
-.PHONY : run_tests_opencv_apps_rostest_test-face_detection__gui_false.test
-
-# fast build rule for target.
-run_tests_opencv_apps_rostest_test-face_detection__gui_false.test/fast:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false.test.dir/build
-.PHONY : run_tests_opencv_apps_rostest_test-face_detection__gui_false.test/fast
-
-# Convenience name for target.
 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test.dir/rule:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test.dir/rule
 .PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test.dir/rule
@@ -629,21 +614,6 @@ _run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test: opencv_apps/t
 _run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test/fast:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test.dir/build
 .PHONY : _run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test/fast
-
-# Convenience name for target.
-opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
-.PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
-
-# Convenience name for target.
-run_tests_opencv_apps_rostest_test-smoothing__gui_false.test: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
-
-.PHONY : run_tests_opencv_apps_rostest_test-smoothing__gui_false.test
-
-# fast build rule for target.
-run_tests_opencv_apps_rostest_test-smoothing__gui_false.test/fast:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/build
-.PHONY : run_tests_opencv_apps_rostest_test-smoothing__gui_false.test/fast
 
 # Convenience name for target.
 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-discrete_fourier_transform__gui_false.test.dir/rule:
@@ -779,6 +749,21 @@ _run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test: opencv_apps/test/CM
 _run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test/fast:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test.dir/build.make opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test.dir/build
 .PHONY : _run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test/fast
+
+# Convenience name for target.
+opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule
+.PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule
+
+# Convenience name for target.
+run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule
+
+.PHONY : run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test
+
+# fast build rule for target.
+run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/build.make opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/build
+.PHONY : run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test/fast
 
 # Convenience name for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-camshift__gui_false.test.dir/rule:
@@ -1666,6 +1651,21 @@ run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_tes
 .PHONY : run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-segment_objects.test/fast
 
 # Convenience name for target.
+opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule
+.PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule
+
+# Convenience name for target.
+_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test: opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/rule
+
+.PHONY : _run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test
+
+# fast build rule for target.
+_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/build.make opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test.dir/build
+.PHONY : _run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test/fast
+
+# Convenience name for target.
 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-rgb_color_filter.test.dir/rule:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-rgb_color_filter.test.dir/rule
 .PHONY : opencv_apps/test/CMakeFiles/run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-rgb_color_filter.test.dir/rule
@@ -1882,10 +1882,11 @@ help:
 	@echo "... _run_tests_opencv_apps_rostest_test-simple_example__gui_false.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test"
 	@echo "... run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test"
-	@echo "... _run_tests_opencv_apps_rostest_test-face_detection__gui_false.test"
+	@echo "... run_tests_opencv_apps_rostest_test-smoothing__gui_false.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-goodfeature_track__gui_false.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test"
 	@echo "... _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-hsv_color_filter.test"
+	@echo "... run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test"
 	@echo "... _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-lk_flow.test"
 	@echo "... vslam_tutorial.bag"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-hls_color_filter.test"
@@ -1894,14 +1895,11 @@ help:
 	@echo "... _run_tests_opencv_apps_rostest_test-find_contours__gui_false.test"
 	@echo "... run_tests_opencv_apps_rostest_test-fback_flow__gui_false.test"
 	@echo "... run_tests_opencv_apps_rostest_test-convex_hull__gui_false.test"
-	@echo "... run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test"
-	@echo "... run_tests_opencv_apps_rostest_test-face_detection__gui_false.test"
 	@echo "... run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-simple_compressed_example.test"
 	@echo "... run_tests_opencv_apps_rostest_test-find_contours__gui_false.test"
 	@echo "... _run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-watershed_segmentation.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test"
-	@echo "... run_tests_opencv_apps_rostest_test-smoothing__gui_false.test"
 	@echo "... run_tests_opencv_apps_rostest_test-discrete_fourier_transform__gui_false.test"
 	@echo "... install/local"
 	@echo "... run_tests_opencv_apps_rostest_test-goodfeature_track__gui_false.test"
@@ -1912,6 +1910,7 @@ help:
 	@echo "... _run_tests_opencv_apps_rostest"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-convex_hull.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test"
+	@echo "... run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-camshift__gui_false.test"
 	@echo "... run_tests_opencv_apps_rostest_test-adding_images__gui_false.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-edge_detection__gui_false.test"
@@ -1973,6 +1972,7 @@ help:
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-fback_flow.test"
 	@echo "... _run_tests_opencv_apps_rostest_test-threshold__gui_false.test"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-segment_objects.test"
+	@echo "... _run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_2_true.test"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-rgb_color_filter.test"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_dlab_ros_ws_src_opencv_apps_test_test-adding_images.test"
 	@echo "... run_tests_opencv_apps_rostest_test-rgb_color_filter__gui_false.test"

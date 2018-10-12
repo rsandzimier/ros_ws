@@ -17,33 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dlab/ros_catkin_ws/devel_isolated/tf/include"
-  "/home/dlab/ros_catkin_ws/src/geometry/tf/include"
-  "/home/dlab/ros_catkin_ws/src/geometry2/tf2_ros/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/actionlib/include"
-  "/home/dlab/ros_catkin_ws/src/actionlib/include"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/message_filters/include"
-  "/home/dlab/ros_catkin_ws/src/diagnostics/diagnostic_updater/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/roscpp/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/roscpp/include/ros"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/roscpp/include"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/xmlrpcpp/include"
-  "/home/dlab/ros_catkin_ws/src/geometry2/tf2/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/tf2_msgs/include"
-  "/home/dlab/ros_catkin_ws/src/geometry2/tf2_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/sensor_msgs/include"
-  "/home/dlab/ros_catkin_ws/src/common_msgs/sensor_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/rosgraph_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/geometry_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/diagnostic_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/actionlib_msgs/include"
-  "/home/dlab/ros_catkin_ws/devel_isolated/std_msgs/include"
-  "/home/dlab/ros_catkin_ws/src/std_msgs/include"
-  "/home/dlab/ros_catkin_ws/src/ros_comm/rosconsole/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/roscpp_serialization/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/rostime/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/roscpp_traits/include"
-  "/home/dlab/ros_catkin_ws/src/roscpp_core/cpp_common/include"
+  "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.

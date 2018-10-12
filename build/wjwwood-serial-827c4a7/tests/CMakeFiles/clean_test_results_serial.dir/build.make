@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dlab/ros_ws/build
 include wjwwood-serial-827c4a7/tests/CMakeFiles/clean_test_results_serial.dir/progress.make
 
 wjwwood-serial-827c4a7/tests/CMakeFiles/clean_test_results_serial:
-	cd /home/dlab/ros_ws/build/wjwwood-serial-827c4a7/tests && /usr/bin/python /home/dlab/ros_catkin_ws/src/catkin/cmake/test/remove_test_results.py /home/dlab/ros_ws/build/test_results/serial
+	cd /home/dlab/ros_ws/build/wjwwood-serial-827c4a7/tests && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/dlab/ros_ws/build/test_results/serial
 
 clean_test_results_serial: wjwwood-serial-827c4a7/tests/CMakeFiles/clean_test_results_serial
 clean_test_results_serial: wjwwood-serial-827c4a7/tests/CMakeFiles/clean_test_results_serial.dir/build.make

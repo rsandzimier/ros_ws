@@ -62,12 +62,9 @@ float64 max_angle"""
         if python3 or type(_x) == unicode:
           _x = _x.encode('utf-8')
           length = len(_x)
-        if python3:
-          buff.write(struct.pack('<I%sB'%length, length, *_x))
-        else:
-          buff.write(struct.pack('<I%ss'%length, length, _x))
+        buff.write(struct.pack('<I%ss'%length, length, _x))
         _x = val1
-        buff.write(_struct_2d.pack(_x.min_angle, _x.max_angle))
+        buff.write(_get_struct_2d().pack(_x.min_angle, _x.max_angle))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -98,7 +95,7 @@ float64 max_angle"""
         _x = val1
         start = end
         end += 16
-        (_x.min_angle, _x.max_angle,) = _struct_2d.unpack(str[start:end])
+        (_x.min_angle, _x.max_angle,) = _get_struct_2d().unpack(str[start:end])
         self.list.append(val1)
       return self
     except struct.error as e:
@@ -120,12 +117,9 @@ float64 max_angle"""
         if python3 or type(_x) == unicode:
           _x = _x.encode('utf-8')
           length = len(_x)
-        if python3:
-          buff.write(struct.pack('<I%sB'%length, length, *_x))
-        else:
-          buff.write(struct.pack('<I%ss'%length, length, _x))
+        buff.write(struct.pack('<I%ss'%length, length, _x))
         _x = val1
-        buff.write(_struct_2d.pack(_x.min_angle, _x.max_angle))
+        buff.write(_get_struct_2d().pack(_x.min_angle, _x.max_angle))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -157,11 +151,19 @@ float64 max_angle"""
         _x = val1
         start = end
         end += 16
-        (_x.min_angle, _x.max_angle,) = _struct_2d.unpack(str[start:end])
+        (_x.min_angle, _x.max_angle,) = _get_struct_2d().unpack(str[start:end])
         self.list.append(val1)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_2d = struct.Struct("<2d")
+def _get_struct_I():
+    global _struct_I
+    return _struct_I
+_struct_2d = None
+def _get_struct_2d():
+    global _struct_2d
+    if _struct_2d is None:
+        _struct_2d = struct.Struct("<2d")
+    return _struct_2d

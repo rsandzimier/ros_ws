@@ -77,6 +77,28 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -110,28 +132,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -196,6 +196,21 @@ _exp_excavator_generate_messages_check_deps_PowerMachine/fast:
 .PHONY : _exp_excavator_generate_messages_check_deps_PowerMachine/fast
 
 # Convenience name for target.
+exp_excavator/CMakeFiles/exp_excavator_generate_messages_eus.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_generate_messages_eus.dir/rule
+.PHONY : exp_excavator/CMakeFiles/exp_excavator_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+exp_excavator_generate_messages_eus: exp_excavator/CMakeFiles/exp_excavator_generate_messages_eus.dir/rule
+
+.PHONY : exp_excavator_generate_messages_eus
+
+# fast build rule for target.
+exp_excavator_generate_messages_eus/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/exp_excavator_generate_messages_eus.dir/build.make exp_excavator/CMakeFiles/exp_excavator_generate_messages_eus.dir/build
+.PHONY : exp_excavator_generate_messages_eus/fast
+
+# Convenience name for target.
 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/rule:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/rule
 .PHONY : exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_JointValues.dir/rule
@@ -241,6 +256,21 @@ exp_excavator_gencpp/fast:
 .PHONY : exp_excavator_gencpp/fast
 
 # Convenience name for target.
+exp_excavator/CMakeFiles/exp_excavator_geneus.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_geneus.dir/rule
+.PHONY : exp_excavator/CMakeFiles/exp_excavator_geneus.dir/rule
+
+# Convenience name for target.
+exp_excavator_geneus: exp_excavator/CMakeFiles/exp_excavator_geneus.dir/rule
+
+.PHONY : exp_excavator_geneus
+
+# fast build rule for target.
+exp_excavator_geneus/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/exp_excavator_geneus.dir/build.make exp_excavator/CMakeFiles/exp_excavator_geneus.dir/build
+.PHONY : exp_excavator_geneus/fast
+
+# Convenience name for target.
 exp_excavator/CMakeFiles/exp_excavator_generate_messages.dir/rule:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_generate_messages.dir/rule
 .PHONY : exp_excavator/CMakeFiles/exp_excavator_generate_messages.dir/rule
@@ -269,6 +299,21 @@ _exp_excavator_generate_messages_check_deps_Jacobian: exp_excavator/CMakeFiles/_
 _exp_excavator_generate_messages_check_deps_Jacobian/fast:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_Jacobian.dir/build.make exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_Jacobian.dir/build
 .PHONY : _exp_excavator_generate_messages_check_deps_Jacobian/fast
+
+# Convenience name for target.
+exp_excavator/CMakeFiles/exp_excavator_gennodejs.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_gennodejs.dir/rule
+.PHONY : exp_excavator/CMakeFiles/exp_excavator_gennodejs.dir/rule
+
+# Convenience name for target.
+exp_excavator_gennodejs: exp_excavator/CMakeFiles/exp_excavator_gennodejs.dir/rule
+
+.PHONY : exp_excavator_gennodejs
+
+# fast build rule for target.
+exp_excavator_gennodejs/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/exp_excavator_gennodejs.dir/build.make exp_excavator/CMakeFiles/exp_excavator_gennodejs.dir/build
+.PHONY : exp_excavator_gennodejs/fast
 
 # Convenience name for target.
 exp_excavator/CMakeFiles/_exp_excavator_generate_messages_check_deps_PowerBucket.dir/rule:
@@ -376,6 +421,21 @@ exp_excavator_generate_messages_lisp/fast:
 .PHONY : exp_excavator_generate_messages_lisp/fast
 
 # Convenience name for target.
+exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule
+.PHONY : exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule
+
+# Convenience name for target.
+exp_excavator_genlisp: exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule
+
+.PHONY : exp_excavator_genlisp
+
+# fast build rule for target.
+exp_excavator_genlisp/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/build.make exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/build
+.PHONY : exp_excavator_genlisp/fast
+
+# Convenience name for target.
 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py.dir/rule:
 	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_generate_messages_py.dir/rule
 .PHONY : exp_excavator/CMakeFiles/exp_excavator_generate_messages_py.dir/rule
@@ -391,19 +451,19 @@ exp_excavator_generate_messages_py/fast:
 .PHONY : exp_excavator_generate_messages_py/fast
 
 # Convenience name for target.
-exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule
-.PHONY : exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule
+exp_excavator/CMakeFiles/exp_excavator_generate_messages_nodejs.dir/rule:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 exp_excavator/CMakeFiles/exp_excavator_generate_messages_nodejs.dir/rule
+.PHONY : exp_excavator/CMakeFiles/exp_excavator_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-exp_excavator_genlisp: exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/rule
+exp_excavator_generate_messages_nodejs: exp_excavator/CMakeFiles/exp_excavator_generate_messages_nodejs.dir/rule
 
-.PHONY : exp_excavator_genlisp
+.PHONY : exp_excavator_generate_messages_nodejs
 
 # fast build rule for target.
-exp_excavator_genlisp/fast:
-	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/build.make exp_excavator/CMakeFiles/exp_excavator_genlisp.dir/build
-.PHONY : exp_excavator_genlisp/fast
+exp_excavator_generate_messages_nodejs/fast:
+	cd /home/dlab/ros_ws/build && $(MAKE) -f exp_excavator/CMakeFiles/exp_excavator_generate_messages_nodejs.dir/build.make exp_excavator/CMakeFiles/exp_excavator_generate_messages_nodejs.dir/build
+.PHONY : exp_excavator_generate_messages_nodejs/fast
 
 # Convenience name for target.
 exp_excavator/CMakeFiles/exp_excavator_genpy.dir/rule:
@@ -427,14 +487,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... _exp_excavator_generate_messages_check_deps_StatePing"
 	@echo "... _exp_excavator_generate_messages_check_deps_PowerMachine"
+	@echo "... exp_excavator_generate_messages_eus"
 	@echo "... _exp_excavator_generate_messages_check_deps_JointValues"
 	@echo "... _exp_excavator_generate_messages_check_deps_JointCommandDynamixel"
 	@echo "... exp_excavator_gencpp"
-	@echo "... rebuild_cache"
+	@echo "... exp_excavator_geneus"
 	@echo "... exp_excavator_generate_messages"
 	@echo "... _exp_excavator_generate_messages_check_deps_Jacobian"
+	@echo "... exp_excavator_gennodejs"
 	@echo "... _exp_excavator_generate_messages_check_deps_PowerBucket"
 	@echo "... _exp_excavator_generate_messages_check_deps_JointCommandArduino"
 	@echo "... install"
@@ -443,13 +508,12 @@ help:
 	@echo "... _exp_excavator_generate_messages_check_deps_ForceWorld"
 	@echo "... exp_excavator_generate_messages_cpp"
 	@echo "... exp_excavator_generate_messages_lisp"
-	@echo "... exp_excavator_generate_messages_py"
 	@echo "... exp_excavator_genlisp"
+	@echo "... exp_excavator_generate_messages_py"
+	@echo "... exp_excavator_generate_messages_nodejs"
 	@echo "... install/local"
 	@echo "... exp_excavator_genpy"
 	@echo "... install/strip"
-	@echo "... test"
-	@echo "... edit_cache"
 .PHONY : help
 
 

@@ -10,4 +10,7 @@ set(opencv_apps_EXEC_DEPENDS "cv_bridge" "dynamic_reconfigure" "image_transport"
 set(opencv_apps_RUN_DEPENDS "cv_bridge" "dynamic_reconfigure" "image_transport" "message_runtime" "nodelet" "roscpp" "std_msgs" "std_srvs")
 set(opencv_apps_TEST_DEPENDS "rostest" "rosbag" "rosservice" "rostopic" "image_proc" "image_view" "topic_tools" "compressed_image_transport")
 set(opencv_apps_DOC_DEPENDS )
+set(opencv_apps_URL_WEBSITE "")
+set(opencv_apps_URL_BUGTRACKER "")
+set(opencv_apps_URL_REPOSITORY "")
 set(opencv_apps_DEPRECATED "")
